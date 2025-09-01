@@ -23,6 +23,7 @@
     ..authors.map((record) => (record.at(0), mail(record.at(1)))).flatten()
   )
   #if logo != none {
+    v(3em)
     place(right)[
       #figure(image(logo, width: width))
     ]
