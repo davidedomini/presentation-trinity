@@ -45,15 +45,12 @@
     show-bibliography-as-footnote: bibliography(title: none, "bibliography.bib"),
   ),
   config-info(
-    title: [Neighbor-Based Decentralized Training Strategies for
-Multi-Agent Reinforcement Learning],
-    subtitle: [ACM Symposium on Applied Computing \@ SAC 2025, MLA Track],
+    title: [Many-Agent Cooperative Learning in Collective Adaptive
+Systems],
+    subtitle: [],
     author: author_list(
       (
-        ("Nicolò Malucellli", "nicolo.malucelli@gmail.com"),
         (first_author("Davide Domini"), "davide.domini@unibo.it"),
-        ("Gianluca Aguzzi", "gianluca.aguzzi@unibo.it"),
-        ("Mirko Viroli", "mirko.viroli@unibo.it"),
       ), logo: "images/disi.svg"
     ),
    // date: datetime(day: 31, month: 03, year: 2025).display("[day] [month repr:long] [year]"),
@@ -91,6 +88,33 @@ Multi-Agent Reinforcement Learning],
 
 // #components.adaptive-columns(outline(title: none, indent: 1em))
 
+== Who am I?
+
+#components.side-by-side(columns: (1fr, 2fr), gutter: 0em)[
+  #block(clip: true, radius: 50%, stroke: 0.5em + rgb("#eb811b5f"))[#figure(image("images/myself.jpg", width: 85%))]
+][
+  === Davide Domini
+
+  - PhD Student at the _University of Bologna_ (Cesena)
+  - Teaching Tutor on topics related to Software Engineering and Machine Learning
+  - Researcher at the #emph[Pervasive Software Lab] \ #fa-globe() #h(0.4em) #text(blue)[#link("https://pslab-unibo.github.io")] (prof. Mirko Viroli)
+
+  === Research Scope and Interests
+  - Federated Learning and Reinforcement Learning
+  - Macroprogramming languages for _collective adaptive systems_
+  - Automated design for collective behaviors
+  - Integration of #emph[AI] and #emph[ML] with collective programming paradigms
+]
+
+
+== Scenarios of interest
+#components.side-by-side(columns: (1fr, 1fr, 1fr))[
+  #figure(image("images/smart-city.jpeg", height: 60%))
+][
+  #figure(image("images/crowd.jpeg", height: 60%))
+][
+  #figure(image("/images/drones.jpeg", height: 60%))
+]
 
 
 // = Shaping Tomorrow's Systems
