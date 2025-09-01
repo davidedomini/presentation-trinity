@@ -106,6 +106,9 @@ Systems],
   - Integration of #emph[AI] and #emph[ML] with collective programming paradigms
 ]
 
+#focus-slide[
+  Research Interests
+]
 
 == Scenarios of interest
 #components.side-by-side(columns: (1fr, 1fr, 1fr))[
@@ -116,23 +119,9 @@ Systems],
   #figure(image("/images/drones.jpeg", height: 60%))
 ]
 
+== Three Main Topics
 
-// = Shaping Tomorrow's Systems
-
-== Multi-Agent Reinforcement Learning
-#align(center)[
-  #figure(image("images/marl.svg", width: 80%))
-]
-
-== MARL Examples
-#components.side-by-side(columns: (1fr, 1fr, 1fr))[
-  #figure(image("images/smart-city.jpeg", height: 60%))
-][
-  #figure(image("images/crowd.jpeg", height: 60%))
-][
-  #figure(image("/images/drones.jpeg", height: 60%))
-]
-
+#figure(image("/images/topics.svg", height: 40%))
 
 == Formalization
 In this paper, we consider #emph[partially observable networked markov decision process] #cite(label("DBLP:journals/tac/AdlakhaLG12"))as a tuple $(cal(G), cal(S), cal(A), cal(O), cal(P), cal(R), #sym.gamma)$, where:
