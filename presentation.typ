@@ -123,19 +123,8 @@ Systems],
 
 #figure(image("/images/topics.svg", height: 40%))
 
-== Formalization
-In this paper, we consider #emph[partially observable networked markov decision process] #cite(label("DBLP:journals/tac/AdlakhaLG12"))as a tuple $(cal(G), cal(S), cal(A), cal(O), cal(P), cal(R), #sym.gamma)$, where:
 
-#h(0.5cm)
-
-  - $cal(G) = (N, E)$ is a *communication graph*, where $N$ is the set of $n$ *agents* and $E #sym.subset.eq N #sym.times N$ represents the *communication links* between agents. Time-varying graphs $cal(G)_t = (N, E_t)$ can be used to represent communication evolving over time $t$
-  - $cal(S)$ is the *global state space*
-  - $cal(A) = cal(A)^1 #sym.times #sym.dots #sym.times cal(A)^n$ is the *joint action space*, where $cal(A)^i$ is the action space of agent $i$
-  - $cal(O) = cal(O)^1 #sym.times #sym.dots #sym.times cal(O)^n$ is the *joint observation space*, where $cal(O)^i$ is the observation space for agent $i$
-  - $cal(P): cal(S) #sym.times cal(A) #sym.times cal(S) #sym.arrow.r  [0, 1]$ is the *state transition function*, describing the probability of transitioning to a new state $s' #sym.in cal(S)$ given the current state $s #sym.in cal(S)$ and joint action $a #sym.in cal(A)$
-  - $cal(R) = \{cal(R)^i\}, i #sym.in N$, where $cal(R)^i: cal(S) #sym.times cal(A) #sym.arrow.r R$ is the *reward function* for agent $i$
-  - $#sym.gamma #sym.in [0, 1]$ is the *discount factor*
-
+= Reinforcement Learning
 
 == Learning and Execution Strategies
 #components.side-by-side(columns: (1fr, 1fr))[
@@ -186,10 +175,6 @@ In this paper, we consider #emph[partially observable networked markov decision 
   #only(2)[#research-block("Goal", [
     Achieve both efficient #emph[decentralized learning] and #emph[effective coordination]
   ])]
-]
-
-#focus-slide[
-  *Why neighborhood matters?*
 ]
 
 == Importance of neighbors
@@ -293,38 +278,8 @@ In this paper, we consider #emph[partially observable networked markov decision 
   #figure((image("images/episode_reward_mean.jpg", width: 90%)))
 ]
 
-== Communication overhead
+= Macroprogramming
 
-#components.side-by-side[
-   - k-NN Averaging might lead to consistent overhead in case of #emph[large models]
-   - Experience sharing #emph[contains overhead] and leads to CTDE like performances
-][
-  #figure((image("images/scalability.jpg", width: 80%)))
-]
+= Federated Learning
 
-= Conclusion
-
-== Conclusion
-#components.side-by-side[
-   === Conclusion
-- Neighbor-based strategies enhance DTDE with performance close to CTDE
-
-- k-NN averaging and experience sharing significantly improve DTDE
-
-- Communication overhead remains minimal, especially with experience sharing
-   
-][
-  === Future Work
-
-  - Explore the implementation of more advanced consensus algorithms
-  
-  - Develop more sophisticated communication protocols to reduce communication overhead
-  
-  - Test these approaches in a wider range and more complex scenarios
-]
-#v(3cm)
-#place(
-  bottom + right,
-  dx: 0pt,
-  figure(image("images/sac-code.svg", width: 15%)) ,
-)
+= Initial plan for my TCD visit
