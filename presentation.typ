@@ -119,6 +119,21 @@ Systems],
   #figure(image("/images/drones.jpeg", height: 60%))
 ]
 
+== Collective-Adaptive Systems
+
+*Collective-adaptive Systems* #cite(label("DBLP:conf/birthday/BucchiaroneM19")) refers to systems with a _large number_ of entities interacting with each other in pursuing a #bold[collective] goal without a central coordinator.
+
+  Actual _behaviour_ arises as an #alert[emergent] property of the system.
+
+  #components.side-by-side[
+    #figure(image("images/swarms.jpg", width: 75%))
+  ][
+    #figure(image("images/pedastrian.png", width: 100%))
+  ][
+    #figure(image("images/coldplay.jpg", width: 88%))
+  ]
+
+
 == Three Main Topics
 
 #figure(image("/images/topics.svg", height: 40%))
@@ -279,6 +294,45 @@ Systems],
 ]
 
 = Macroprogramming
+
+== Aggregate Computing
+
+#underline[Aggregate computing] #cite(label("DBLP:journals/computer/BealPV15")) as a way to #bold[engineer] *collective-adaptive systems*.
+
+#place(right, dx: -28em)[
+  #line(start: (0em, 0em), end: (0em, 55%), stroke: 0.05em + rgb("#23373b"))
+]
+
+#v(1em)
+
+#components.side-by-side(columns: (auto, 1fr), gutter: 2em)[
+  #figure(image("images/channel.svg", height: 45%))
+][
+  #figure(image("images/ac.svg"))
+]
+
+#v(1em)
+
+#align(center)[Typical deployments assume that all the devices #bold[can] execute the program.]
+
+== Self-Organizing Coordination Regions (SCR)
+
+#components.side-by-side(columns: (1fr, 1fr, 1fr), gutter: 2em)[
+  #align(center)[
+    === Information collection
+    #figure(image("images/scr1.svg", height: 50%))
+  ]
+][
+  #align(center)[
+    === Leader computation
+    #figure(image("images/scr2.svg", height: 50%))
+  ]
+][
+  #align(center)[
+    === Information sharing
+    #figure(image("images/scr3.svg", height: 50%))
+  ]
+]
 
 = Federated Learning
 

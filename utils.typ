@@ -58,3 +58,7 @@
     ]
   )
 }
+
+#let bold(content) = {
+  text(weight: "bold")[#content]
+}
