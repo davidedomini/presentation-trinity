@@ -4,6 +4,7 @@
 #import "@preview/ctheorems:1.1.3": *
 #import "@preview/numbly:0.1.0": numbly
 #import "utils.typ": *
+#import "@preview/tiaoma:0.3.0"
 
 // Pdfpc configuration
 // typst query --root . ./example.typ --field value --one "<pdfpc-file>" > ./example.pdfpc
@@ -97,7 +98,7 @@ Systems],
 
   - PhD Student at the _University of Bologna_ (Cesena)
   - Teaching Tutor on topics related to Software Engineering and Machine Learning
-  - Researcher at the #emph[Pervasive Software Lab] \ #fa-globe() #h(0.4em) #text(blue)[#link("https://pslab-unibo.github.io")] (prof. Mirko Viroli)
+  - Researcher at the #emph[Pervasive Software Lab] \ #fa-globe() #h(0.4em) #text(blue)[#link("https://pslab-unibo.github.io")] (prof. Mirko Viroli & Danilo Pianini)
 
   === Research Scope and Interests
   - Federated Learning and Reinforcement Learning
@@ -133,13 +134,11 @@ Systems],
     #figure(image("images/coldplay.jpg", width: 88%))
   ]
 
-
 == Three Main Topics
 
 #figure(image("/images/topics.svg", height: 40%))
 
-
-= Reinforcement Learning
+= Reinforcement Learning  #cite(label("DBLP:conf/sac/MalucelliDAV25"))
 
 == Learning and Execution Strategies
 #components.side-by-side(columns: (1fr, 1fr))[
@@ -336,4 +335,39 @@ Systems],
 
 = Federated Learning
 
-= Initial plan for my TCD visit
+== Federated Larning in a nutshell
+#components.side-by-side(columns: (1fr, 1fr), gutter: 2em)[
+  #align(center)[
+    === Centralized FL
+    #figure(image("images/federated-learning-schema.svg", height: 65%))
+  ]
+][
+  #align(center)[
+    === Peer-to-Peer FL
+    #figure(image("images/federated-learning-schema-p2p.svg", height: 65%))
+  ]
+]
+
+= Real World Deployments
+
+== Project Emerge
+- *20 robots* to demonstrate *emergent behaviors* such as flocking and formation control
+- *3D-printed body* + *low-cost electronics*, total cost around \$600 for the whole swarm (≈ 80% cheaper than commercial alternatives)
+
+
+
+#components.side-by-side(columns: (1fr, 1fr), gutter: 2em)[
+  #align(center)[
+    #figure(image("images/robot-ndr.jpg", height: 65%))
+  ]
+][
+  #align(center)[
+    #tiaoma.qrcode("https://experiment.com/projects/project-emerge-an-open-source-swarm-robotics-platform", options: (
+      scale: 3.0,
+    ))
+  ]
+]
+
+= Thanks for your attention!
+
+If you see any room for collaboration, feel free to reach out! :)
