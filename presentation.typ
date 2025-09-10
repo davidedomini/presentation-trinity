@@ -138,7 +138,7 @@ Systems],
 
 #figure(image("/images/topics.svg", height: 40%))
 
-= Reinforcement Learning  #cite(label("DBLP:conf/sac/MalucelliDAV25"))
+= Multi Agent Reinforcement Learning  #cite(label("DBLP:conf/sac/MalucelliDAV25"))
 
 == Learning and Execution Strategies
 #components.side-by-side(columns: (1fr, 1fr))[
@@ -236,7 +236,7 @@ Systems],
 
 == K-Nearest Neighbor Experience Sharing
 
-- Each agent maintains *its own experience replay buffer*, but also *augments* it by collecting a fraction of each *neighbor’s buffer*
+- Each agent maintains *its own experience replay buffer*, but also *augments* it by collecting a fraction of each *neighbor's buffer*
 - This allows agents to learn from each other’s experiences
 - Formally, we define:
   - $cal(D)_i^t$ the replay buffer of the agent $i$ at time $t$
@@ -291,6 +291,17 @@ Systems],
 ][
   #figure((image("images/episode_reward_mean.jpg", width: 90%)))
 ]
+
+== Other works on MARL 
+- *Scalability of GNNs in swarm robotics scenarios*
+  - How GNNs #emph[scale] at evaluation time after being trained with a limited number of agents?
+  - For example: if we train with 10 agents, can we successfully scale to 100 agents at evaluation?
+  - We expect GNNs to scale well, as their message-passing relies only on #emph[local neighborhood information]
+  - Preliminary results confirm this potential, but a more extensive evaluation is a clear future direction
+
+- *GNNs + MARL + Aggregate Computing for task offloading in the edge-cloud continuum* #cite(label("DBLP:conf/woa/DominiFAV24"))
+  - By including aggregate computing, we account for #emph[collective dynamics] of the system
+  - We show that removing the AC component leads to suboptimal policies, as only local objectives are considered rather than global system-wide goals
 
 = Macroprogramming
 
