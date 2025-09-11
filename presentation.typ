@@ -120,9 +120,9 @@ Systems],
   #figure(image("/images/drones.jpeg", height: 60%))
 ]
 
-== Collective-Adaptive Systems
+== Collective-Adaptive Systems (CAS)
 
-*Collective-adaptive Systems* #cite(label("DBLP:conf/birthday/BucchiaroneM19")) refers to systems with a _large number_ of entities interacting with each other in pursuing a #bold[collective] goal without a central coordinator.
+*Collective-Adaptive Systems* #cite(label("DBLP:conf/birthday/BucchiaroneM19")) refers to systems with a _large number_ of entities interacting with each other in pursuing a #bold[collective] goal without a central coordinator.
 
   Actual _behaviour_ arises as an #alert[emergent] property of the system.
 
@@ -137,6 +137,25 @@ Systems],
 == Three Main Topics
 
 #figure(image("/images/topics.svg", height: 40%))
+
+== Importance of neighbors
+
+#only(1)[
+  #components.side-by-side(columns: (1fr, 1fr), gutter: 1em, align: bottom)[
+#quote[Devices in #emph[spatial proximity] have #emph[similar experiences] and make #emph[similar observations], as the phenomena to capture are often intrinsically #emph[context dependent].#cite(label("esterle2022deep"))]
+][
+ #figure(image("images/subregions.svg", width: 70%))
+]
+  
+] 
+
+#only(2)[
+ #quote[Devices in #emph[spatial proximity] have #emph[similar experiences] and make #emph[similar observations], as the phenomena to capture are often intrinsically #emph[context dependent].#cite(label("esterle2022deep"))]
+
+ === Reference Scenarios
+ - *Urban traffic prediction:* traffic patterns observed by devices within the same city district are likely to be more similar compared to those observed by devices in different districts
+ - *Building heating management:* buildings in residential districts exhibit different heating patterns compared to those in industrial districts
+]
 
 = Multi Agent Reinforcement Learning  #cite(label("DBLP:conf/sac/MalucelliDAV25"))
 
@@ -190,31 +209,6 @@ Systems],
     Achieve both efficient #emph[decentralized learning] and #emph[effective coordination]
   ])]
 ]
-
-== Importance of neighbors
-
-#quote[Devices in #emph[spatial proximity] have #emph[similar experiences] and make #emph[similar observations], as the phenomena to capture are often intrinsically #emph[context dependent].#cite(label("esterle2022deep"))]
-
-#only(2)[
- === Reference Scenarios
- - *Urban traffic prediction:* traffic patterns observed by devices within the same city district are likely to be more similar compared to those observed by devices in different districts
- - *Building heating management:* buildings in residential districts exhibit different heating patterns compared to those in industrial districts
-]
-
-// == K-nearest Neighbors Formalization
-
-// Formally, we consider a #emph[weighted communication graph] $G = (N, E, W)$
-//   - $N$ is the set of *agents*
-//   - $E$ is the set of *edges* (i.e., communication link)
-//   - $W: E #sym.arrow.r #sym.RR^+$ is a weight function assigning a *positive weight* to each edge
-
-// #only(2)[
-//   Let $d(i,j)$ denote the *shortest path* length between agents $i$ and $j$ in the weighted graph $G$
-//   - The length of a path is the *sum of the weights* of the edges along the path
-//   - If no path exists between $i$ and $j$, we set $d(i,j) = #sym.infinity$
-//   - Then, the set of *k-nearest neighbors* of agent $i$ is defined as: 
-//     - $N_(k)(i) = \{ j | i #sym.eq.not j, "rank"(d(i,j))#sym.lt.eq k \}$
-// ]
 
 == K-Nearest Neighbor Averaging
 
@@ -358,6 +352,23 @@ Systems],
     #figure(image("images/federated-learning-schema-p2p.svg", height: 65%))
   ]
 ]
+
+== Federated Learning in Large Scale IoT
+
+=== Challenges:
+
+- #emph[Non-IID Data]: devices in different regions may see skewed data distributions 
+- #emph[Centralization Bottleneck]: Traditional FL relies on a central server for model aggregation, which conflicts with a fully decentralized Society 5.0 vision
+- #emph[Communication Overhead]: Exchanging full model updates is bandwidth-heavy
+- #emph[Resource Constraints]: Edge devices have limited battery, CPU, and memory
+
+== Three main works 
+
+1. *FBFL: A Field-Based Coordination Approach for Data Heterogeneity in Federated Learning* #cite(label("DBLP:journals/corr/abs-2502-08577"))
+
+2. *Proximity-based self-federated learning* #cite(label("DBLP:conf/acsos/DominiAFVE24"))
+
+3. *Sparse Self-Federated Learning for Energy Efficient Cooperative Intelligence in Society 5.0* #cite(label("DBLP:journals/corr/abs-2507-07613"))
 
 = Real World Deployments
 
