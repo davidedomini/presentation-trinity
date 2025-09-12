@@ -362,13 +362,26 @@ Systems],
 - #emph[Communication Overhead]: Exchanging full model updates is bandwidth-heavy
 - #emph[Resource Constraints]: Edge devices have limited battery, CPU, and memory
 
+== Self-Org Approach
+
+#figure(image("images/algorithm-overview.svg", height: 21%))
+
 == Three main works 
 
 1. *FBFL: A Field-Based Coordination Approach for Data Heterogeneity in Federated Learning* #cite(label("DBLP:journals/corr/abs-2502-08577"))
 
+  - Devices are clustered only based on #emph[spatial proximity]
+  - Effective but it's a strong assumption
+
 2. *Proximity-based self-federated learning* #cite(label("DBLP:conf/acsos/DominiAFVE24"))
 
+  - Clustering based both on spatial proximity and #emph[data similarity]
+  - The devices measure the #emph[similarity with their neighbors]; as long as the #emph[accumulated sum] of this similarity is below a certain #emph[threshold], they are considered to belong to the same cluster
+
 3. *Sparse Self-Federated Learning for Energy Efficient Cooperative Intelligence in Society 5.0* #cite(label("DBLP:journals/corr/abs-2507-07613"))
+  - Using #emph[sparsification] and #emph[quantization] to reduce both time and memory consumptions
+  - Many open research problems on this integration
+
 
 = Real World Deployments
 
