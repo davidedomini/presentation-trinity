@@ -152,10 +152,27 @@ Systems],
 #only(2)[
  #quote[Devices in #emph[spatial proximity] have #emph[similar experiences] and make #emph[similar observations], as the phenomena to capture are often intrinsically #emph[context dependent].#cite(label("esterle2022deep"))]
 
- === Reference Scenarios
- - *Urban traffic prediction:* traffic patterns observed by devices within the same city district are likely to be more similar compared to those observed by devices in different districts
- - *Building heating management:* buildings in residential districts exhibit different heating patterns compared to those in industrial districts
+*Reference Scenarios*
+ - #emph[Urban traffic prediction:] traffic patterns observed by devices within the same city district are likely to be more similar compared to those observed by devices in different districts
+ - #emph[Building heating management:] buildings in residential districts exhibit different heating patterns compared to those in industrial districts
 ]
+
+== Goals and Challenges
+
+*Goals*
+
+- Enable robust #emph[collective & cooperative] learning
+- Support #emph[self-organization & self-adaptation]
+- Ensure reliable #emph[coordination] & scalable #emph[architectures]
+
+#only(2)[
+*Challenges*
+
+- Managing #emph[distributed control]
+- Handling #emph[failures] gracefully
+- Coping with #emph[data & environment heterogeneity]
+]
+
 
 = Multi Agent Reinforcement Learning  #cite(label("DBLP:conf/sac/MalucelliDAV25"))
 
