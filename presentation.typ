@@ -94,16 +94,17 @@ Systems],
 #components.side-by-side(columns: (1fr, 2fr), gutter: 0em)[
   #block(clip: true, radius: 50%, stroke: 0.5em + rgb("#eb811b5f"))[#figure(image("images/myself.jpg", width: 85%))]
 ][
-  === Davide Domini
 
+  *Davide Domini*
   - PhD Student at the _University of Bologna_ (Cesena)
-  - Teaching Tutor on topics related to Software Engineering and Machine Learning
-  - Researcher at the #emph[Pervasive Software Lab] \ #fa-globe() #h(0.4em) #text(blue)[#link("https://pslab-unibo.github.io")] (prof. Mirko Viroli & Danilo Pianini)
+  - Supervisors: prof. Mirko Viroli & Danilo Pianini & Matteo Ferrara
+  - Researcher at the #emph[Pervasive Software Lab] \ #fa-globe() #h(0.4em) #text(blue)[#link("https://pslab-unibo.github.io")] 
+  - #fa-github() domm99
 
-  === Research Scope and Interests
-  - Federated Learning and Reinforcement Learning
-  - Macroprogramming languages for _collective adaptive systems_
-  - Automated design for collective behaviors
+  *Research Scope and Interests*
+  - #emph[Federated] Learning and #emph[Reinforcement] Learning
+  - Macroprogramming languages for #emph[collective adaptive systems]
+  - Automated design for #emph[collective behaviors]
   - Integration of #emph[AI] and #emph[ML] with collective programming paradigms
 ]
 
