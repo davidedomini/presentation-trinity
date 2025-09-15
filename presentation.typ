@@ -99,7 +99,7 @@ Systems],
   - PhD Student at the _University of Bologna_ (Cesena)
   - Supervisors: prof. Mirko Viroli & Danilo Pianini & Matteo Ferrara
   - Researcher at the #emph[Pervasive Software Lab] \ #fa-globe() #h(0.4em) #text(blue)[#link("https://pslab-unibo.github.io")] 
-  - #fa-github() domm99
+  - #fa-github() #link("https://github.com/domm99")[domm99]
 
   *Research Scope and Interests*
   - #emph[Federated] Learning and #emph[Reinforcement] Learning
