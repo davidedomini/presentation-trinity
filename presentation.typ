@@ -297,7 +297,7 @@ Systems],
   - By including aggregate computing, we account for #emph[collective dynamics] of the system
   - We show that removing the AC component leads to suboptimal policies, as only local objectives are considered rather than global system-wide goals
 
-= Macroprogramming
+= Self-Org (--> Macroprogramming)
 
 == Aggregate Computing
 
