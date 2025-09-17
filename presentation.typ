@@ -230,8 +230,8 @@ Systems],
 
 == K-Nearest Neighbor Averaging
 
-- Each agent maintains a *local Q-network* and shares its Q-values with its neighbors
-- Each neighbor *average the received Q-values* and use the result to update its own Q-network
+- Each agent maintains a *local Q-network* and shares it with its neighbors
+- Each neighbor *average the received networks* and use the result to update its own Q-network
 - Formally, the update rule for agent $i$ at time $t+1$ is:
   - $#sym.theta^(t+1)_i = #sym.theta^t_i + #sym.alpha #sym.sum _(j #sym.in N_(k)(i)) frac(1,k) #sym.theta^t_j$ 
 
